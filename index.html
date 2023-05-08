@@ -1,50 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
     <title>Calculator</title>
-</head>
-<body>
-    <div class="main">
-        <div class="calc-body">
-            <div class="screen">
-                <div class="screen-last">0</div>
-                <div class="screen-current">0</div>
-            </div>
-            <div class="buttons">
-                <div class="clr-del-row">
-                    <button class = "clear" >CLEAR</button>
-                    <button class = "delete" >DELETE</button>
-                </div>
-                <div class=row">
-                    <button class="normal-buttons">7</button>
-                    <button class="normal-buttons">8</button>
-                    <button class="normal-buttons">9</button>
-                    <button class="normal-buttons divide">/</button>
-                </div>
-                <div class="row">
-                    <button class="normal-buttons">4</button>
-                    <button class="normal-buttons">5</button>
-                    <button class="normal-buttons">6</button>
-                    <button class="normal-buttons multiply">x</button>
-                </div>
-                <div class=row">
-                    <button class="normal-buttons">1</button>
-                    <button class="normal-buttons">2</button>
-                    <button class="normal-buttons">3</button>
-                    <button class="normal-buttons subtract">-</button>
-                </div>
-                <div class="row">
-                    <button class="normal-buttons point">.</button>
-                    <button class="normal-buttons">0</button>
-                    <button class="normal-buttons equal">=</button>
-                    <button class="normal-buttons add">+</button>
-                </div>
-            </div>
+  </head>
+
+  <body>
+    <main class="main">
+      <div class="calculator">
+        <div class="screen">
+          <div class="screen-last">0</div>
+          <div class="screen-current">0</div>
         </div>
-    </div>
-</body>
+        <div class="buttons-grid">
+          <button class="btn clear span-2">CLEAR</button>
+          <button class="btn delete span-2">DELETE</button>
+
+          <button class="btn" data-number>7</button>
+          <button class="btn" data-number>8</button>
+          <button class="btn" data-number>9</button>
+          <button class="btn divide" data-operator>/</button>
+
+          <button class="btn" data-number>4</button>
+          <button class="btn" data-number>5</button>
+          <button class="btn" data-number>6</button>
+          <button class="btn multiply" data-operator>x</button>
+
+          <button class="btn" data-number>1</button>
+          <button class="btn" data-number>2</button>
+          <button class="btn" data-number>3</button>
+          <button class="btn subtract" data-operator>-</button>
+
+          <button class="btn point" id="pointBtn">.</button>
+          <button class="btn" data-number>0</button>
+          <button class="btn " id= "equalsBtn" data-operator>=</button>
+          <button class="btn "  data-operator>+</button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
